@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden/product</title>
+     <!-- TailwindCSS Cdn Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+    <!-- navbar -->
+     <section class="bg-green-100 p-5 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class=" gap-5 hidden md:flex ">
+            <li>
+                <a href="./index.html " class="text-gray-600 hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="./product.html" class="text-gray-600 hover:underline" > Products</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="text-gray-600 hover:underline">Contact</a>
+            </li>
+        </ul>
+     </section>
+     <!-- sidenav bar -->
+     <section id="sidenav"class="bg-green-100 fixed z-20 top-0"style="width: 50%; height: 100vh; right: -50%; transition-all duration-1000">
+        <div class="text-right p-5">
+            <p class="inline cursor-pointer" id="closenav">X</p>
+        </div>
+        <ul class="gap-10 items-center text-gray-600 flex flex-col  ">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+     </section>
+     <!-- Our products -->
+      <section class=" text-center ">
+        <div class=" mt-8 text-2xl font-bold ">
+            <h1>
+                Our Products
+            </h1>
+            <div>
+            <input id="search"  type="text" placeholder="search for products..." class=" border border-black p-2 m-2 "style="width: 80%;"></div>
+        </div>
+        <!-- product sell image -->
+         <section id="product-container" class="text-center grid grid-cols-2 md:grid-cols-4 p-2 m-2">
+            <div class="">
+                <img src="./images/bestseller_1.jpg" alt="pot plant" class="inline p-2 hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose plant</h1>
+                <p>$21</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_2.jpg" alt="pot plant" class="inline p-2 hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Lotus Plant</h1>
+                <p>$25</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_3.jpg" alt="pot plant" class="inline p-2 hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Lily Plant</h1>
+                <p>$15</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_4.jpg" alt="pot plant" class="inline p-2  hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Jasmine Plant</h1>
+                <p>$11</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_5.jpg" alt="pot plant" class="inline p-2  hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Marie gold</h1>
+                <p>$22</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_6.jpg" alt="pot plant" class="inline p-2  hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Hibiscus</h1>
+                <p>$21</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_7.jpg" alt="pot plant" class="inline p-2  hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Catctus</h1>
+                <p>$19</p>
+            </div>
+             <div class="">
+                <img src="./images/bestseller_8.jpg" alt="pot plant" class="inline p-2  hover:shadow-xl transform hover:-translate-y-2">
+                <h1>bamboo</h1>
+                <p>$19</p>
+            </div>
+         </section>
+      </section>
+      <!-- Footer -->
+       <section class="bg-green-100 flex flex-col ">
+        <h1 class=" text-4xl font-bold p-2 m-2">
+            Greenden
+        </h1>
+        <p class="p-2 m-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, culpa!
+        </p>
+        <p class="p-2 m-2">@ 2025 Greenday.com</p>
+
+       </section>
+       <script src="./product.js"></script>
+</body>
+</html>
