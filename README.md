@@ -1,4 +1,4 @@
-##🌿 Plant Buying Website
+## 🌿 Plant Buying Website
 
 A **modern and responsive Plant Buying Website** built using **HTML**, **Tailwind CSS**, and **JavaScript**.  
 This project offers a smooth and elegant user experience for exploring, selecting, and buying plants online.
